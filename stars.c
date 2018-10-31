@@ -192,8 +192,10 @@ void ShowStar(GLint n) {
             glBegin(GL_POLYGON);
             short res = 32;
             for (i = 0; i < res; i++) {
-                float x = x0 + width * Cos((float) i * MAXANGLES / (float)res);
-                float y = y0 + width * Sin((float) i * MAXANGLES / (float)res);
+                float x = x0 + width *
+                    Cos((float) i * MAXANGLES / (float)res);
+                float y = y0 + width *
+                    Sin((float) i * MAXANGLES / (float)res);
                 glVertex2f(x, y);
             };
             glEnd();
